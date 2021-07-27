@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jul 27 14:38:24 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : ki4_v2
+Top-level Entity Name : ki4_v2
+Family : Cyclone IV E
+Total logic elements : 2,158
+    Total combinational functions : 1,646
+    Dedicated logic registers : 1,315
+Total registers : 1315
+Total pins : 20
+Total virtual pins : 0
+Total memory bits : 40,960
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

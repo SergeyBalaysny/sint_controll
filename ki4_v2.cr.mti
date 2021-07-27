@@ -1,0 +1,73 @@
+C:/Users/Budkova/Documents/Quartus/ki4_v2/uart1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Budkova/Documents/Quartus/ki4_v2/uart1.vhd
+Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity uart1
+-- Compiling architecture logic of uart1
+
+} {} {}} C:/Users/Budkova/Documents/Quartus/ki4_v2/sint_control_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Budkova/Documents/Quartus/ki4_v2/sint_control_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity sint_control_tb
+-- Compiling architecture sint_control_tb_behav of sint_control_tb
+
+} {} {}} C:/Users/Budkova/Documents/Quartus/my_convert_p.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Budkova/Documents/Quartus/my_convert_p.vhd
+Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling package my_convert_p
+-- Compiling package body my_convert_p
+-- Loading package my_convert_p
+
+} {} {}} C:/Users/Budkova/Documents/Quartus/ki4_v2/ki4_v2_tb.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none C:/Users/Budkova/Documents/Quartus/ki4_v2/ki4_v2_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ki4_v2_tb
+-- Compiling architecture arch of ki4_v2_tb
+
+} {} {}} C:/Users/Budkova/Documents/Quartus/ki4_v2/parameters.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Budkova/Documents/Quartus/ki4_v2/parameters.vhd
+Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling package parameters
+
+} {} {}} C:/Users/Budkova/Documents/Quartus/ki4_v2/sint_contol.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Budkova/Documents/Quartus/ki4_v2/sint_contol.vhd
+Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package my_convert_p
+-- Compiling entity sint_control
+-- Compiling architecture sint_control_behav of sint_control
+
+} {} {}} C:/Users/Budkova/Documents/Quartus/ki4_v2/spi.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Budkova/Documents/Quartus/ki4_v2/spi.vhd
+Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package parameters
+-- Compiling entity spi
+-- Compiling architecture spi_behav of spi
+
+} {} {}}

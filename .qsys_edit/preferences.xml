@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="127" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Tri-State Components,Project,Library/Qsys Interconnect/Interrupt,Library,Library/University Program/Audio &amp; Video,Library/Qsys Interconnect,Library/Interface Protocols/Ethernet/10G to 1G Multi-rate Ethernet,Library/University Program/Communications,Library/Qsys Interconnect/Tri-State Components,Library/Interface Protocols,Library/University Program/Audio &amp; Video/Video,Library/Qsys Interconnect/Memory-Mapped,Library/University Program/Generic IO,Library/Qsys Interconnect/Memory-Mapped Alpha,Library/University Program,Library/Interface Protocols/Ethernet/Reference Design Components,Library/University Program/Memory,Library/University Program/Clock,Library/University Program/Bridges,Library/Interface Protocols/Ethernet/1G Multi-rate Ethernet,Library/Interface Protocols/Ethernet" />
+ <window width="1936" height="1216" x="1912" y="-8" />
+</preferences>

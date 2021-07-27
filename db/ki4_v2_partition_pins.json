@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "p_o_end_diap",
+					"strict" : false
+				},
+				{
+					"name" : "p_o_ak_sr_kp",
+					"strict" : false
+				},
+				{
+					"name" : "p_o_spi_cs",
+					"strict" : false
+				},
+				{
+					"name" : "p_o_spi_clk",
+					"strict" : false
+				},
+				{
+					"name" : "p_o_spi_mosi",
+					"strict" : false
+				},
+				{
+					"name" : "p_o_diap_13",
+					"strict" : false
+				},
+				{
+					"name" : "p_o_diap_24",
+					"strict" : false
+				},
+				{
+					"name" : "p_o_diap_2",
+					"strict" : false
+				},
+				{
+					"name" : "p_o_diap_4",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_zone_2",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_diap_1",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_diap_2",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_zone_1",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_cnt_tick",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_end_diap_from_res",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_reverse",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_sint_power_on",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_main_tick",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_reset",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
