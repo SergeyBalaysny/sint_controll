@@ -60,10 +60,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "p_i_cnt_tick",
-					"strict" : false
-				},
-				{
 					"name" : "p_i_end_diap_from_res",
 					"strict" : false
 				},
@@ -73,6 +69,10 @@
 				},
 				{
 					"name" : "p_i_sint_power_on",
+					"strict" : false
+				},
+				{
+					"name" : "p_i_cnt_tick",
 					"strict" : false
 				},
 				{

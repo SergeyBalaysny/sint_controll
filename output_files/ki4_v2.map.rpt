@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ki4_v2
-Tue Jul 27 14:38:24 2021
+Wed Jul 28 15:35:13 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -55,15 +55,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jul 27 14:38:24 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 28 15:35:13 2021       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; ki4_v2                                      ;
 ; Top-level Entity Name              ; ki4_v2                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,158                                       ;
-;     Total combinational functions  ; 1,646                                       ;
-;     Dedicated logic registers      ; 1,315                                       ;
-; Total registers                    ; 1315                                        ;
+; Total logic elements               ; 2,204                                       ;
+;     Total combinational functions  ; 1,692                                       ;
+;     Dedicated logic registers      ; 1,317                                       ;
+; Total registers                    ; 1317                                        ;
 ; Total pins                         ; 20                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 40,960                                      ;
@@ -249,20 +249,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 2,158         ;
+; Estimated Total logic elements              ; 2,204         ;
 ;                                             ;               ;
-; Total combinational functions               ; 1646          ;
+; Total combinational functions               ; 1692          ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 761           ;
-;     -- 3 input functions                    ; 469           ;
-;     -- <=2 input functions                  ; 416           ;
+;     -- 4 input functions                    ; 770           ;
+;     -- 3 input functions                    ; 475           ;
+;     -- <=2 input functions                  ; 447           ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 1264          ;
-;     -- arithmetic mode                      ; 382           ;
+;     -- normal mode                          ; 1279          ;
+;     -- arithmetic mode                      ; 413           ;
 ;                                             ;               ;
-; Total registers                             ; 1315          ;
-;     -- Dedicated logic registers            ; 1315          ;
+; Total registers                             ; 1317          ;
+;     -- Dedicated logic registers            ; 1317          ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
 ; I/O pins                                    ; 20            ;
@@ -271,8 +271,8 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; p_i_clk~input ;
-; Maximum fan-out                             ; 990           ;
-; Total fan-out                               ; 9310          ;
+; Maximum fan-out                             ; 992           ;
+; Total fan-out                               ; 9461          ;
 ; Average fan-out                             ; 3.09          ;
 +---------------------------------------------+---------------+
 
@@ -282,7 +282,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |ki4_v2                                                                                                                                 ; 1646 (971)          ; 1315 (651)                ; 40960       ; 0            ; 0       ; 0         ; 20   ; 0            ; |ki4_v2                                                                                                                                                                                                                                                                                                                                            ; ki4_v2                            ; work         ;
+; |ki4_v2                                                                                                                                 ; 1692 (1017)         ; 1317 (653)                ; 40960       ; 0            ; 0       ; 0         ; 20   ; 0            ; |ki4_v2                                                                                                                                                                                                                                                                                                                                            ; ki4_v2                            ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 126 (1)             ; 91 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ki4_v2|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 125 (0)             ; 91 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ki4_v2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 125 (0)             ; 91 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ki4_v2|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -358,27 +358,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |ki4_v2|s_FSM                                                                                                                                                                                                                                                                                                                                                              ;
-+-----------------------------+-----------------+-------------------+-----------------------+-----------------------+---------------------+-------------------------+----------------------+-----------------------+-------------------------+----------------------------+-----------------------------+----------------------+-----------------------+---------------------+---------------+
-; Name                        ; s_FSM.st_wait_1 ; s_FSM.st_res_diap ; s_FSM.st_send_command ; s_FSM.st_set_new_freq ; s_FSM.st_check_diap ; s_FSM.st_check_end_diap ; s_FSM.st_check_zone2 ; s_FSM.st_res_end_freq ; s_FSM.st_res_begin_freq ; s_FSM.st_check_freq_scoupe ; s_FSM.st_calculate_new_freq ; s_FSM.st_check_zone1 ; s_FSM.st_wait_end_out ; s_FSM.st_check_tick ; s_FSM.st_idle ;
-+-----------------------------+-----------------+-------------------+-----------------------+-----------------------+---------------------+-------------------------+----------------------+-----------------------+-------------------------+----------------------------+-----------------------------+----------------------+-----------------------+---------------------+---------------+
-; s_FSM.st_idle               ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 0             ;
-; s_FSM.st_check_tick         ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 1                   ; 1             ;
-; s_FSM.st_wait_end_out       ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 1                     ; 0                   ; 1             ;
-; s_FSM.st_check_zone1        ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 1                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_calculate_new_freq ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 1                           ; 0                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_check_freq_scoupe  ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 1                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_res_begin_freq     ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 1                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_res_end_freq       ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 1                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_check_zone2        ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 1                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_check_end_diap     ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 1                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_check_diap         ; 0               ; 0                 ; 0                     ; 0                     ; 1                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_set_new_freq       ; 0               ; 0                 ; 0                     ; 1                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_send_command       ; 0               ; 0                 ; 1                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_res_diap           ; 0               ; 1                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
-; s_FSM.st_wait_1             ; 1               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
-+-----------------------------+-----------------+-------------------+-----------------------+-----------------------+---------------------+-------------------------+----------------------+-----------------------+-------------------------+----------------------------+-----------------------------+----------------------+-----------------------+---------------------+---------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |ki4_v2|s_FSM                                                                                                                                                                                                                                                                                                                                                                                                          ;
++-----------------------------+--------------------+----------------------+-----------------+-------------------+-----------------------+-----------------------+---------------------+-------------------------+----------------------+-----------------------+-------------------------+----------------------------+-----------------------------+----------------------+-----------------------+---------------------+---------------+
+; Name                        ; s_FSM.st_pow_delay ; s_FSM.st_check_power ; s_FSM.st_wait_1 ; s_FSM.st_res_diap ; s_FSM.st_send_command ; s_FSM.st_set_new_freq ; s_FSM.st_check_diap ; s_FSM.st_check_end_diap ; s_FSM.st_check_zone2 ; s_FSM.st_res_end_freq ; s_FSM.st_res_begin_freq ; s_FSM.st_check_freq_scoupe ; s_FSM.st_calculate_new_freq ; s_FSM.st_check_zone1 ; s_FSM.st_wait_end_out ; s_FSM.st_check_tick ; s_FSM.st_idle ;
++-----------------------------+--------------------+----------------------+-----------------+-------------------+-----------------------+-----------------------+---------------------+-------------------------+----------------------+-----------------------+-------------------------+----------------------------+-----------------------------+----------------------+-----------------------+---------------------+---------------+
+; s_FSM.st_idle               ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 0             ;
+; s_FSM.st_check_tick         ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 1                   ; 1             ;
+; s_FSM.st_wait_end_out       ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 1                     ; 0                   ; 1             ;
+; s_FSM.st_check_zone1        ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 1                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_calculate_new_freq ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 1                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_check_freq_scoupe  ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 1                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_res_begin_freq     ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 1                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_res_end_freq       ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 1                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_check_zone2        ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 1                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_check_end_diap     ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 1                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_check_diap         ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 1                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_set_new_freq       ; 0                  ; 0                    ; 0               ; 0                 ; 0                     ; 1                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_send_command       ; 0                  ; 0                    ; 0               ; 0                 ; 1                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_res_diap           ; 0                  ; 0                    ; 0               ; 1                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_wait_1             ; 0                  ; 0                    ; 1               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_check_power        ; 0                  ; 1                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
+; s_FSM.st_pow_delay          ; 1                  ; 0                    ; 0               ; 0                 ; 0                     ; 0                     ; 0                   ; 0                       ; 0                    ; 0                     ; 0                       ; 0                          ; 0                           ; 0                    ; 0                     ; 0                   ; 1             ;
++-----------------------------+--------------------+----------------------+-----------------+-------------------+-----------------------+-----------------------+---------------------+-------------------------+----------------------+-----------------------+-------------------------+----------------------------+-----------------------------+----------------------+-----------------------+---------------------+---------------+
 
 
 Encoding Type:  One-Hot
@@ -399,7 +401,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------+----------------------------------------+
 ; Register name                                            ; Reason for Removal                     ;
 +----------------------------------------------------------+----------------------------------------+
-; s_SPI_DATA[1..71]                                        ; Merged with s_SPI_DATA[0]              ;
+; s_SPI_DATA[0..6,8..71]                                   ; Merged with s_SPI_DATA[7]              ;
 ; s_CURR_FREQ_INC_1_2[2,4,5,8,10,13,18,23,26,27,31,35..47] ; Merged with s_CURR_FREQ_INC_1_2[0]     ;
 ; s_CURR_FREQ_INC_3_4[0..9,11,13,14,19,22,27,32,36..47]    ; Merged with s_CURR_FREQ_INC_1_2[0]     ;
 ; s_CURR_FREQ_INC_1_2[22,24,25,28..30,32..34]              ; Merged with s_CURR_FREQ_INC_1_2[14]    ;
@@ -411,7 +413,7 @@ Encoding Type:  One-Hot
 ; s_SPI_DATA[123..127]                                     ; Merged with s_SPI_DATA[121]            ;
 ; s_SPI_DATA_LEN[0..2,6..31]                               ; Merged with s_SPI_DATA[121]            ;
 ; s_SPI_DATA_LEN[5]                                        ; Merged with s_SPI_DATA_LEN[4]          ;
-; s_SPI_DATA[0]                                            ; Stuck at GND due to stuck port data_in ;
+; s_SPI_DATA[7]                                            ; Stuck at GND due to stuck port data_in ;
 ; s_CURR_FREQ_INC_1_2[0]                                   ; Stuck at GND due to stuck port data_in ;
 ; s_SPI_DATA[121]                                          ; Stuck at GND due to stuck port data_in ;
 ; spi:spi_unit|s_BUFFER[0..71]                             ; Stuck at GND due to stuck port data_in ;
@@ -425,7 +427,7 @@ Encoding Type:  One-Hot
 +---------------+---------------------------+----------------------------------------------------------------------------------+
 ; Register name ; Reason for Removal        ; Registers Removed due to This Register                                           ;
 +---------------+---------------------------+----------------------------------------------------------------------------------+
-; s_SPI_DATA[0] ; Stuck at GND              ; spi:spi_unit|s_BUFFER[0], spi:spi_unit|s_BUFFER[1], spi:spi_unit|s_BUFFER[2],    ;
+; s_SPI_DATA[7] ; Stuck at GND              ; spi:spi_unit|s_BUFFER[0], spi:spi_unit|s_BUFFER[1], spi:spi_unit|s_BUFFER[2],    ;
 ;               ; due to stuck port data_in ; spi:spi_unit|s_BUFFER[3], spi:spi_unit|s_BUFFER[4], spi:spi_unit|s_BUFFER[5],    ;
 ;               ;                           ; spi:spi_unit|s_BUFFER[6], spi:spi_unit|s_BUFFER[7], spi:spi_unit|s_BUFFER[8],    ;
 ;               ;                           ; spi:spi_unit|s_BUFFER[9], spi:spi_unit|s_BUFFER[10], spi:spi_unit|s_BUFFER[11],  ;
@@ -457,12 +459,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1315  ;
+; Total registers                              ; 1317  ;
 ; Number of registers using Synchronous Clear  ; 99    ;
 ; Number of registers using Synchronous Load   ; 142   ;
 ; Number of registers using Asynchronous Clear ; 203   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 686   ;
+; Number of registers using Clock Enable       ; 718   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -474,7 +476,7 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; spi:spi_unit|s_SPI_CS                                                                                                                                                                                                                                                                                                           ; 3       ;
 ; s_END_DIAP                                                                                                                                                                                                                                                                                                                      ; 3       ;
-; s_FIRST_RES_ZONE_2                                                                                                                                                                                                                                                                                                              ; 3       ;
+; s_FIRST_RES_ZONE_2                                                                                                                                                                                                                                                                                                              ; 6       ;
 ; s_FREQ_COUNT_4[42]                                                                                                                                                                                                                                                                                                              ; 6       ;
 ; s_FREQ_COUNT_4[37]                                                                                                                                                                                                                                                                                                              ; 4       ;
 ; s_FREQ_COUNT_4[35]                                                                                                                                                                                                                                                                                                              ; 4       ;
@@ -567,20 +569,22 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 4:1                ; 35 bits   ; 70 LEs        ; 70 LEs               ; 0 LEs                  ; Yes        ; |ki4_v2|s_FREQ_COUNT_2[41]         ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |ki4_v2|spi:spi_unit|s_BUF_CNT[17] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |ki4_v2|s_SET_DATA                 ;
+; 4:1                ; 35 bits   ; 70 LEs        ; 70 LEs               ; 0 LEs                  ; Yes        ; |ki4_v2|s_FREQ_COUNT_1[32]         ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |ki4_v2|spi:spi_unit|s_BUF_CNT[19] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |ki4_v2|s_SP_RST                   ;
 ; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ki4_v2|s_CURR_FREQ_INC_1_2[11]    ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |ki4_v2|s_SPI_DATA_LEN[4]          ;
-; 6:1                ; 48 bits   ; 192 LEs       ; 48 LEs               ; 144 LEs                ; Yes        ; |ki4_v2|s_SPI_DATA[107]            ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |ki4_v2|spi:spi_unit|s_COUNTER[2]  ;
-; 7:1                ; 71 bits   ; 284 LEs       ; 71 LEs               ; 213 LEs                ; Yes        ; |ki4_v2|spi:spi_unit|s_BUFFER[71]  ;
-; 7:1                ; 56 bits   ; 224 LEs       ; 112 LEs              ; 112 LEs                ; Yes        ; |ki4_v2|spi:spi_unit|s_BUFFER[102] ;
-; 11:1               ; 48 bits   ; 336 LEs       ; 144 LEs              ; 192 LEs                ; Yes        ; |ki4_v2|s_CURR_FREQ[21]            ;
-; 3:1                ; 33 bits   ; 66 LEs        ; 33 LEs               ; 33 LEs                 ; Yes        ; |ki4_v2|s_FREQ_COUNT_1[14]         ;
-; 4:1                ; 34 bits   ; 68 LEs        ; 68 LEs               ; 0 LEs                  ; Yes        ; |ki4_v2|s_FREQ_COUNT_3[26]         ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |ki4_v2|Selector1                  ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ki4_v2|Selector3                  ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |ki4_v2|s_SPI_DATA_LEN[3]          ;
+; 6:1                ; 48 bits   ; 192 LEs       ; 48 LEs               ; 144 LEs                ; Yes        ; |ki4_v2|s_SPI_DATA[78]             ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |ki4_v2|spi:spi_unit|s_COUNTER[0]  ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |ki4_v2|s_TEMP_COUNT[2]            ;
+; 7:1                ; 71 bits   ; 284 LEs       ; 71 LEs               ; 213 LEs                ; Yes        ; |ki4_v2|spi:spi_unit|s_BUFFER[43]  ;
+; 7:1                ; 56 bits   ; 224 LEs       ; 112 LEs              ; 112 LEs                ; Yes        ; |ki4_v2|spi:spi_unit|s_BUFFER[93]  ;
+; 11:1               ; 48 bits   ; 336 LEs       ; 144 LEs              ; 192 LEs                ; Yes        ; |ki4_v2|s_CURR_FREQ[34]            ;
+; 3:1                ; 33 bits   ; 66 LEs        ; 33 LEs               ; 33 LEs                 ; Yes        ; |ki4_v2|s_FREQ_COUNT_1[36]         ;
+; 4:1                ; 34 bits   ; 68 LEs        ; 68 LEs               ; 0 LEs                  ; Yes        ; |ki4_v2|s_FREQ_COUNT_3[14]         ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |ki4_v2|Selector13                 ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |ki4_v2|Selector16                 ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ki4_v2|Selector15                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
 
@@ -685,26 +689,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 20                          ;
-; cycloneiii_ff         ; 779                         ;
+; cycloneiii_ff         ; 781                         ;
 ;     ENA               ; 234                         ;
 ;     ENA SCLR          ; 49                          ;
-;     ENA SLD           ; 42                          ;
+;     ENA SLD           ; 74                          ;
 ;     SCLR              ; 2                           ;
-;     SLD               ; 32                          ;
-;     plain             ; 420                         ;
-; cycloneiii_lcell_comb ; 1134                        ;
-;     arith             ; 285                         ;
-;         2 data inputs ; 97                          ;
+;     plain             ; 422                         ;
+; cycloneiii_lcell_comb ; 1180                        ;
+;     arith             ; 316                         ;
+;         2 data inputs ; 128                         ;
 ;         3 data inputs ; 188                         ;
-;     normal            ; 849                         ;
+;     normal            ; 864                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 11                          ;
-;         2 data inputs ; 151                         ;
-;         3 data inputs ; 120                         ;
-;         4 data inputs ; 566                         ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 150                         ;
+;         3 data inputs ; 126                         ;
+;         4 data inputs ; 575                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 11.00                       ;
-; Average LUT depth     ; 4.30                        ;
+; Average LUT depth     ; 4.39                        ;
 +-----------------------+-----------------------------+
 
 
@@ -774,7 +777,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Jul 27 14:37:55 2021
+    Info: Processing started: Wed Jul 28 15:34:44 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ki4_v2 -c ki4_v2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -816,7 +819,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_ngc File: C:/Users/Budkova/Documents/Quartus/ki4_v2/db/cmpr_ngc.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2021.07.27.15:38:13 Progress: Loading sld8c7b9b8e/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2021.07.28.16:35:02 Progress: Loading sld8c7b9b8e/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -843,15 +846,15 @@ Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 43 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2211 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2257 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 2181 logic cells
+    Info (21061): Implemented 2227 logic cells
     Info (21064): Implemented 5 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 699 megabytes
-    Info: Processing ended: Tue Jul 27 14:38:24 2021
+    Info: Peak virtual memory: 701 megabytes
+    Info: Processing ended: Wed Jul 28 15:35:13 2021
     Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:56
+    Info: Total CPU time (on all processors): 00:00:59
 
 

@@ -9,7 +9,8 @@ package parameters is
 	constant c_LEN: natural := 127;
 	constant c_FREQ_LEN : natural := 47; 		-- длинна кода частоты в битах
 
-	constant  s_SPI_SPEED : natural := 20_00_000; --10_000_000; -- spi speed 
+	constant  s_SPI_SPEED : natural := 2_000_000; --10_000_000; -- spi speed 
+	constant c_POW_TIME_DELAY : natural := 10_000; 		-- задержка перед выдачей команды включение при подачи питания на синтезатор или систему управления
 
 -- команда сброса синтезатора
 	constant c_SPI_COMMAND_RES : std_logic_vector(c_LEN downto 0) := X"3E000000000000000000000000000000";

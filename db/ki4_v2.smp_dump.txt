@@ -1,21 +1,23 @@
 
 State Machine - |ki4_v2|s_FSM
-Name s_FSM.st_wait_1 s_FSM.st_res_diap s_FSM.st_send_command s_FSM.st_set_new_freq s_FSM.st_check_diap s_FSM.st_check_end_diap s_FSM.st_check_zone2 s_FSM.st_res_end_freq s_FSM.st_res_begin_freq s_FSM.st_check_freq_scoupe s_FSM.st_calculate_new_freq s_FSM.st_check_zone1 s_FSM.st_wait_end_out s_FSM.st_check_tick s_FSM.st_idle 
-s_FSM.st_idle 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-s_FSM.st_check_tick 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-s_FSM.st_wait_end_out 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-s_FSM.st_check_zone1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-s_FSM.st_calculate_new_freq 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-s_FSM.st_check_freq_scoupe 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-s_FSM.st_res_begin_freq 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-s_FSM.st_res_end_freq 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-s_FSM.st_check_zone2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-s_FSM.st_check_end_diap 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-s_FSM.st_check_diap 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-s_FSM.st_set_new_freq 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-s_FSM.st_send_command 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-s_FSM.st_res_diap 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-s_FSM.st_wait_1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Name s_FSM.st_pow_delay s_FSM.st_check_power s_FSM.st_wait_1 s_FSM.st_res_diap s_FSM.st_send_command s_FSM.st_set_new_freq s_FSM.st_check_diap s_FSM.st_check_end_diap s_FSM.st_check_zone2 s_FSM.st_res_end_freq s_FSM.st_res_begin_freq s_FSM.st_check_freq_scoupe s_FSM.st_calculate_new_freq s_FSM.st_check_zone1 s_FSM.st_wait_end_out s_FSM.st_check_tick s_FSM.st_idle 
+s_FSM.st_idle 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+s_FSM.st_check_tick 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+s_FSM.st_wait_end_out 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+s_FSM.st_check_zone1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+s_FSM.st_calculate_new_freq 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+s_FSM.st_check_freq_scoupe 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+s_FSM.st_res_begin_freq 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+s_FSM.st_res_end_freq 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+s_FSM.st_check_zone2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+s_FSM.st_check_end_diap 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+s_FSM.st_check_diap 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+s_FSM.st_set_new_freq 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+s_FSM.st_send_command 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+s_FSM.st_res_diap 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+s_FSM.st_wait_1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+s_FSM.st_check_power 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+s_FSM.st_pow_delay 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 
 State Machine - |ki4_v2|spi:spi_unit|s_FSM
 Name s_FSM.st_second_front s_FSM.st_first_front s_FSM.st_set_data s_FSM.st_idle 

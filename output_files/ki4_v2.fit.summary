@@ -1,14 +1,14 @@
-Fitter Status : Successful - Tue Jul 27 14:38:32 2021
+Fitter Status : Successful - Wed Jul 28 15:35:21 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : ki4_v2
 Top-level Entity Name : ki4_v2
 Family : Cyclone IV E
 Device : EP4CE10F17C7
 Timing Models : Final
-Total logic elements : 2,067 / 10,320 ( 20 % )
-    Total combinational functions : 1,649 / 10,320 ( 16 % )
-    Dedicated logic registers : 1,315 / 10,320 ( 13 % )
-Total registers : 1315
+Total logic elements : 2,113 / 10,320 ( 20 % )
+    Total combinational functions : 1,695 / 10,320 ( 16 % )
+    Dedicated logic registers : 1,317 / 10,320 ( 13 % )
+Total registers : 1317
 Total pins : 20 / 180 ( 11 % )
 Total virtual pins : 0
 Total memory bits : 40,960 / 423,936 ( 10 % )

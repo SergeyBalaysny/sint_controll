@@ -72,7 +72,7 @@ architecture ki4_upr_behav of ki4_v2 is
 	SIGNAL s_MT_FLAG, s_CNT_FLAG, s_D1_FLAG, s_D2_FLAG, s_CR_FLAG, s_RST_FLAG, s_ZON1_SET_FLAG, s_ZON2_SET_FLAG, s_ZON1_RST_FLAG, s_ZON2_RST_FLAG, s_SINT_POW_FLAG : std_logic := '0';
 
 	type t_state is (st_idle, st_check_tick, st_wait_end_out, st_check_zone1, st_calculate_new_freq, st_check_freq_scoupe, st_res_begin_freq, st_res_end_freq,
-		st_check_zone2, st_check_end_diap, st_check_diap, st_set_new_freq, st_send_command, st_res_diap, st_wait_1);
+		st_check_zone2, st_check_end_diap, st_check_diap, st_set_new_freq, st_send_command, st_res_diap, st_wait_1, st_check_power, st_pow_delay);
 	SIGNAL s_FSM: t_state;
 -- временный счетчик
 	SIGNAL s_TEMP_COUNT: integer := 0;
@@ -256,7 +256,8 @@ begin
 										s_FSM <= st_check_zone1;
 
 									else
-										s_FSM <= st_check_zone2;
+										--s_FSM <= st_check_zone2;
+										s_FSM <= st_check_power;
 
 									end if;
 
@@ -377,6 +378,22 @@ begin
 										s_FREQ_COUNT_3 <= c_END_FREQ_DIAP_3;
 										s_FREQ_COUNT_4 <= c_END_FREQ_DIAP_4;
 										s_FSM <= st_set_new_freq;
+
+-- проверка флага первого включения или флага появления питания в процессе работы 
+			when st_check_power => if s_SINT_POW_FLAG = '1' or s_FIRST_RES_ZONE_2 = '1' then
+										s_TEMP_COUNT <= c_POW_TIME_DELAY;
+										s_FSM <= st_pow_delay;
+									else
+										s_FSM <= st_check_zone2;
+									end if;
+
+-- задержка выдачи команды включения при подаче питания на синтезтор или систему управления
+			when st_pow_delay => 	if s_TEMP_COUNT = 0 then
+										s_FSM <= st_check_zone2;
+									else 
+										s_TEMP_COUNT <= s_TEMP_COUNT - 1;
+										s_FSM <= st_pow_delay;
+									end if;
 
 -- проверка сигнала состяния зона 2
 -- при установке сигнала разрешения работы синтезатора, при первом включении, а также в случае, если пинтание синтезатора было выключено, а потом включено

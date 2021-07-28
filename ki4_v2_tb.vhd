@@ -117,7 +117,7 @@ begin
 
 	sint_pow_on: process begin
 		s_SINT_POW_ON <= '0';
-		wait for 10000 ns;
+		wait for 100000 ns;
 		s_SINT_POW_ON <= '1';
 		wait;
 	end process;

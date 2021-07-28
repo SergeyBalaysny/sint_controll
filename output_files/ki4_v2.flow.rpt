@@ -1,5 +1,5 @@
 Flow report for ki4_v2
-Tue Jul 27 14:38:38 2021
+Wed Jul 28 15:35:28 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jul 27 14:38:35 2021       ;
+; Flow Status                        ; Successful - Wed Jul 28 15:35:24 2021       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; ki4_v2                                      ;
 ; Top-level Entity Name              ; ki4_v2                                      ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE10F17C7                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,067 / 10,320 ( 20 % )                     ;
-;     Total combinational functions  ; 1,649 / 10,320 ( 16 % )                     ;
-;     Dedicated logic registers      ; 1,315 / 10,320 ( 13 % )                     ;
-; Total registers                    ; 1315                                        ;
+; Total logic elements               ; 2,113 / 10,320 ( 20 % )                     ;
+;     Total combinational functions  ; 1,695 / 10,320 ( 16 % )                     ;
+;     Dedicated logic registers      ; 1,317 / 10,320 ( 13 % )                     ;
+; Total registers                    ; 1317                                        ;
 ; Total pins                         ; 20 / 180 ( 11 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 40,960 / 423,936 ( 10 % )                   ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/27/2021 14:37:56 ;
+; Start date & time ; 07/28/2021 15:34:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ki4_v2              ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                     ; Value                                                         ; Default Value ; Entity Name ; Section Id       ;
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID               ; 159090361698242.162738587506068                               ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID               ; 159090361698242.162747568510496                               ; --            ; --          ; --               ;
 ; ENABLE_SIGNALTAP                    ; On                                                            ; --            ; --          ; --               ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                            ; --            ; --          ; --               ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                             ; --            ; --          ; --               ;
@@ -123,11 +123,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:27     ; 1.0                     ; 699 MB              ; 00:00:54                           ;
-; Fitter                    ; 00:00:07     ; 1.1                     ; 1321 MB             ; 00:00:09                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 540 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.2                     ; 631 MB              ; 00:00:03                           ;
-; Total                     ; 00:00:38     ; --                      ; --                  ; 00:01:07                           ;
+; Analysis & Synthesis      ; 00:00:28     ; 1.0                     ; 701 MB              ; 00:00:57                           ;
+; Fitter                    ; 00:00:07     ; 1.1                     ; 1325 MB             ; 00:00:09                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 539 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.2                     ; 632 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:39     ; --                      ; --                  ; 00:01:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

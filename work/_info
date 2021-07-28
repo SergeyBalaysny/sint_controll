@@ -29,10 +29,10 @@ n@_opt1
 R4
 R0
 T_opt2
-!s110 1627385838
-VC7e3IM6W3ahIQNOO2^kmz1
+!s110 1627475635
+V9nTem?9=FF7A@X?i=V<zz3
 R1
-=8-90b11c7f07c2-60ffefee-10c-790
+=4-90b11c7f07c2-61014eb2-3a3-16fc
 R2
 R3
 n@_opt2
@@ -86,8 +86,8 @@ R19
 R20
 R21
 Eki4_v2
-Z23 w1627385828
-Z24 DPx4 work 10 parameters 0 22 G>GXmNRm@8f^b[KioA<212
+Z23 w1627475501
+Z24 DPx4 work 10 parameters 0 22 zfB?32Q2Jm`EhNNL[fmB?3
 R7
 R8
 R9
@@ -102,9 +102,9 @@ VXa95VdA0_QilV6f34hDDn3
 !s100 G77cJ9D:<V[_M5m^ne[?W2
 R15
 33
-Z25 !s110 1627385834
+Z25 !s110 1627475597
 !i10b 1
-Z26 !s108 1627385834.000000
+Z26 !s108 1627475597.000000
 R18
 R19
 !i113 0
@@ -121,8 +121,8 @@ R11
 DEx4 work 6 ki4_v2 0 22 Xa95VdA0_QilV6f34hDDn3
 l95
 L46
-VVzgRdA3QI@n3CMcEgd0oH0
-!s100 OHARWWGFEe_gDVK:Xlz6D2
+VLP0zWn1ha;o2P=Olj^7o]0
+!s100 7=DXFM8bGdJPjf29R>?A`1
 R15
 33
 R25
@@ -199,7 +199,7 @@ Z28 o-work work -2002 -explicit
 R21
 w1620116141
 Eki4_v2_tb
-Z29 w1627385616
+Z29 w1627475624
 R10
 R11
 R12
@@ -211,9 +211,9 @@ V::lRag^Z4L;KVmUKhog=b2
 !s100 lM`T:;AYUPJ<XcoZQ_OWD0
 R15
 33
-Z32 !s110 1627385621
+Z32 !s110 1627475629
 !i10b 1
-Z33 !s108 1627385621.000000
+Z33 !s108 1627475629.000000
 Z34 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|C:/Users/Budkova/Documents/Quartus/ki4_v2/ki4_v2_tb.vhd|
 Z35 !s107 C:/Users/Budkova/Documents/Quartus/ki4_v2/ki4_v2_tb.vhd|
 !i113 0
@@ -225,8 +225,8 @@ R11
 DEx4 work 9 ki4_v2_tb 0 22 ::lRag^Z4L;KVmUKhog=b2
 l50
 L9
-V70Vh5fjSWnIb`03d;Z94b3
-!s100 fezG6llZMzYXHKG4^B`oK2
+VZn4Hcdn12Uz9CBjhAI>HN3
+!s100 69<ZCd>deO7ecaA7e=BSM2
 R15
 33
 R32
@@ -254,9 +254,9 @@ VCLS]7eMDg@^[]TA@KC9hf0
 R15
 32
 b1
-Z39 !s110 1624362889
+Z39 !s110 1627475593
 !i10b 1
-Z40 !s108 1624362889.000000
+Z40 !s108 1627475593.000000
 Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Budkova/Documents/Quartus/my_convert_p.vhd|
 Z42 !s107 C:/Users/Budkova/Documents/Quartus/my_convert_p.vhd|
 !i113 0
@@ -289,19 +289,19 @@ R8
 R9
 R10
 R11
-w1624518386
+w1627475581
 R12
 8C:/Users/Budkova/Documents/Quartus/ki4_v2/parameters.vhd
 FC:/Users/Budkova/Documents/Quartus/ki4_v2/parameters.vhd
 l0
 L7
-VG>GXmNRm@8f^b[KioA<212
-!s100 MVZoSa3=`Fhm[3mU^<?z53
+VzfB?32Q2Jm`EhNNL[fmB?3
+!s100 VN0Kc8>^PTG5TH[dkLYD^2
 R15
 32
-!s110 1624518390
+R39
 !i10b 1
-!s108 1624518390.000000
+R40
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Budkova/Documents/Quartus/ki4_v2/parameters.vhd|
 !s107 C:/Users/Budkova/Documents/Quartus/ki4_v2/parameters.vhd|
 !i113 0
@@ -414,11 +414,11 @@ VTkzKgFZ2EVO6Ion1OXWQS1
 !s100 XN9lnTb@:4GG]h]H?A[m00
 R15
 32
-Z57 !s110 1624518430
+R39
 !i10b 1
-Z58 !s108 1624518430.000000
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Budkova/Documents/Quartus/ki4_v2/spi.vhd|
-Z60 !s107 C:/Users/Budkova/Documents/Quartus/ki4_v2/spi.vhd|
+R40
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Budkova/Documents/Quartus/ki4_v2/spi.vhd|
+Z58 !s107 C:/Users/Budkova/Documents/Quartus/ki4_v2/spi.vhd|
 !i113 0
 R28
 R21
@@ -436,21 +436,21 @@ V1_QIQTUNP5iJ@=C4;>Fe:3
 !s100 zVogond7dDd@cNf][P];j3
 R15
 32
-R57
+R39
 !i10b 1
+R40
+R57
 R58
-R59
-R60
 !i113 0
 R28
 R21
 Euart1
-Z61 w1624346729
+Z59 w1624346729
 R10
 R11
 R12
-Z62 8C:/Users/Budkova/Documents/Quartus/ki4_v2/uart1.vhd
-Z63 FC:/Users/Budkova/Documents/Quartus/ki4_v2/uart1.vhd
+Z60 8C:/Users/Budkova/Documents/Quartus/ki4_v2/uart1.vhd
+Z61 FC:/Users/Budkova/Documents/Quartus/ki4_v2/uart1.vhd
 l0
 L4
 VBhBo9LAIk6:;KXZzG=@[h3
@@ -460,8 +460,8 @@ R15
 R39
 !i10b 1
 R40
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Budkova/Documents/Quartus/ki4_v2/uart1.vhd|
-Z65 !s107 C:/Users/Budkova/Documents/Quartus/ki4_v2/uart1.vhd|
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Budkova/Documents/Quartus/ki4_v2/uart1.vhd|
+Z63 !s107 C:/Users/Budkova/Documents/Quartus/ki4_v2/uart1.vhd|
 !i113 0
 R28
 R21
@@ -478,8 +478,8 @@ R15
 R39
 !i10b 1
 R40
-R64
-R65
+R62
+R63
 !i113 0
 R28
 R21
